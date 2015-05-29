@@ -1,0 +1,28 @@
+// upside down Pyramid
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	
+int n;
+
+ cout << "please enter integer: ";
+  cin >> n;
+  for (int i= (n+1)/2; i > 0; i--)
+  {
+	//  cout << i  << ": ";
+	  for (int j=1; j<= n; j++)
+	  {
+		  if ( (j > (n+1)/2-i) && (j < (n+1)/2+i) )
+		  cout << "*";
+		  else
+			  cout<< " ";
+	  }
+
+	  cout <<endl;
+  }
+  system ("pause");
+  return 0;
+}
